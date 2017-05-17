@@ -1,0 +1,71 @@
+#! /bin/bash
+
+. $HOME/.config/panel/panel_colors
+
+clock()
+{
+	date '+%R'
+}
+
+cur_song()
+{
+	cur=`mpc current`
+	prev=""
+	next=""
+	play=""
+	if [[ -n $cur ]] ; then
+		prev="%{T2}%{A1:mpc prev:}\uf04a%{A}"
+		next="%{T2}%{A1:mpc next:}\uf04e%{A}"
+		status=`mpc | awk -F"[][]" 'FNR==2 { print $2 }'`
+		if [[ $status == "playing" ]] ; then
+                    icon="\uf04c"
+		else
+                    icon="\uf04b"
+		fi
+                play="%{T2}%{A1:mpc toggle:}${icon}%{A}"
+	else
+		cur= '--'
+	fi
+
+	echo "${prev} ${play} ${next} ${cur}"
+}
+
+desktops()
+{
+	wm=''
+	status=`bspc wm -g | cut -d: -f2-7`
+	IFS=':'
+	set -- ${status}
+	while [ $# -gt 0 ] ; do
+		item=$1
+		name=${item#?}
+		case $item in 
+			F*|O*)
+				# focused
+				icon="\uf111"
+				;;
+			f*)
+				# unfocused free
+				icon="\uf10c"
+				;;
+			o*)
+				# unfocused occupied
+				icon="\uf192"
+				;;
+		esac
+		wm="${wm}%{T2}%{A:bspc desktop -f ${name}:} ${icon} %{A}"
+		shift
+	done
+	echo "${wm}"
+	#echo "${status}"
+}
+
+volume()
+{
+	status=`amixer get Master | awk -F"[][]" '/dB/ { print $6 }'` 
+	if [ $status == 'on' ]; then
+		amixer get Master | awk -F"[][]" '/dB/ { print "Vol:" $2 }' 
+	else
+		echo '-muted-' 
+	fi
+}

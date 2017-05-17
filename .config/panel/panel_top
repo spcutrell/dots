@@ -1,0 +1,28 @@
+#! /bin/bash
+
+PANEL_HEIGHT=15
+PANEL_FONT='xft:Hack-10'
+
+. $HOME/.config/panel/panel_func
+
+while :
+do
+	buf=""
+	#Left
+	buf="${buf} %{l} "
+	buf="${buf}$(cur_song)"
+
+	#Center
+	buf="${buf} %{c} "
+	buf="${buf}$(desktops)"
+
+	#Right
+	buf="${buf} %{r} "
+	buf="${buf}$(volume)	"
+	buf="${buf}$(clock)"
+
+	echo -e $buf
+	sleep 0.10
+done
+
+wait

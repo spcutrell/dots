@@ -1,0 +1,10 @@
+#! /bin/bash
+
+#Top Bar
+$HOME/.config/panel/panel_top | lemonbar -p \
+	-gx15 			\
+	-o2 			\
+	-f "Hack-7" 		\
+	-f "FontAwesome-7" 	\
+	-B#40000000		\
+	| sh &
