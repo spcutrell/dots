@@ -1,0 +1,43 @@
+!Urxvt Settings
+!*font: 		        Hack-10
+*font: 		        xft:Hack:size=10
+
+*scrollBar: 		false
+
+!*foreground:		#9b949a
+*foreground:		#b2b2b2
+*background:		#372936
+
+!black
+*color0: 		#272222
+*color8: 		#272222
+!red
+*color1: 		#b08e90
+*color9: 		#b08e90
+!green
+*color2: 		#7a9477
+*color10: 		#7a9477
+!*color10: 		#659d65
+!yellow
+*color3: 		#b4b492
+*color11: 		#b4b492
+!*color11: 		#b0bd79
+!blue
+*color4: 		#646a79
+*color12: 		#646a79
+!*color12: 		#586782
+!magenta
+*color5: 		#706379
+*color13: 		#706379
+!*color13: 		#b642ac
+!cyan
+*color6: 		#586e6d
+*color14: 		#586e6d
+!*color14: 		#1271ba
+!white
+*color7: 		#e5e5e5
+*color15: 		#e5e5e5
+
+!Set XFT in Emacs
+!Emacs.FontBackend: 	xft
+!Emacs.font: 		Hack-10
