@@ -4,4 +4,6 @@
 alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
 
-alias dotmgr='/usr/bin/git --git-dir=/home/spcutrell/.dots --work-tree=/home/spcutrell'
+export PATH="$HOME/.node_modules_global/bin:$PATH"
+
+alias dotmgr='/usr/bin/git --git-dir=/home/scutrell/.dots --work-tree=/home/scutrell'

@@ -24,7 +24,7 @@ cur_song()
 		fi
                 play="%{T2}%{A1:mpc toggle:}${icon}%{A}"
 	else
-		cur= '--'
+		cur= "--"
 	fi
 
 	echo "${prev} ${play} ${next} ${cur}"

@@ -1,4 +1,4 @@
 #!/bin/sh
 #feh  --no-fehbg --bg-scale '/home/spcutrell/Pictures/Wallpapers/hydralisk_wallpaper.jpg' 
 #feh  --no-fehbg --bg-scale '/home/spcutrell/Pictures/Wallpapers/Demon.png' 
-feh  --no-fehbg --bg-scale '/home/spcutrell/Pictures/Wallpapers/DemonAlt.png' 
+feh  --no-fehbg --bg-scale '/home/scutrell/Pictures/Wallpapers/DemonAlt.png' 
