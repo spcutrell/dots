@@ -17,3 +17,4 @@ bspc monitor -d 1 2 3 4 5 6
 #Rules
 bspc rule -a Gimp desktop=^6 state=floating follow=no
 bspc rule -a Steam desktop=^5 state=floating follow=no
+bspc rule -a android-studio desktop=^4 state=floating follow=no

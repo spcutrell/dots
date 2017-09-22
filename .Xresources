@@ -5,6 +5,7 @@
 *scrollBar: 		false
 
 !*foreground:		#9b949a
+
 *foreground:		#b2b2b2
 *background:		#372936
 
@@ -37,7 +38,3 @@
 !white
 *color7: 		#e5e5e5
 *color15: 		#e5e5e5
-
-!Set XFT in Emacs
-!Emacs.FontBackend: 	xft
-!Emacs.font: 		Hack-10
