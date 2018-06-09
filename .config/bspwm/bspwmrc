@@ -18,5 +18,5 @@ bspc config history_aware_focus  true
 bspc config click_to_focus	 true
 
 #Rules
-bspc rule -a Gimp desktop=^6 state=floating follow=no
-bspc rule -a Steam desktop=^5 state=floating follow=no
+bspc rule -a Gimp desktop=^4 state=floating follow=no
+bspc rule -a Steam desktop=^3 state=floating follow=no

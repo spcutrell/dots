@@ -9,11 +9,11 @@ super + Return
 # program launcher
 super + space
 	dmenu_run -b -i \
-        -p 'find:' \
-        -nb '#222222' \
-        -sb '#8c8c8c' \
-        -nf '#8c8c8c' \
-        -sf '#222222' \
+            -p  'find:'     \
+        -nb '#222222'   \
+        -sb '#8c8c8c'   \
+        -nf '#8c8c8c'   \
+        -sf '#222222'   \
         -fn 'Hack'
 
 #  Keyboard Keys
