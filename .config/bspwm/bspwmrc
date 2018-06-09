@@ -1,5 +1,11 @@
 #! /bin/bash
 
+sxhkd &
+$HOME/.config/polybar/launch.sh
+
+#Desktops
+bspc monitor -d 1 2 3 4 5 6
+
 #Config
 bspc config border_width         3
 bspc config window_gap          15
@@ -11,10 +17,6 @@ bspc config focus_by_distance    true
 bspc config history_aware_focus  true
 bspc config click_to_focus	 true
 
-#Desktops
-bspc monitor -d 1 2 3 4 5 6
-
 #Rules
 bspc rule -a Gimp desktop=^6 state=floating follow=no
 bspc rule -a Steam desktop=^5 state=floating follow=no
-bspc rule -a android-studio desktop=^4 state=floating follow=no

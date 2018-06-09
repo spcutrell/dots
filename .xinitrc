@@ -15,7 +15,7 @@ fi
 sh ~/.config/fehbg &
 
 #Set Panel
-$HOME/.config/panel/panel_master &
+#$HOME/.config/panel/panel_master &
 
 #Spawn URxvt Daemon
 urxvtd -q -o -f &
@@ -30,5 +30,4 @@ mpd &
 xsetroot -cursor_name left_ptr &
 
 #Launch the Windows Manager
-sxhkd &
 exec bspwm
